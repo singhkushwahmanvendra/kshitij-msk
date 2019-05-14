@@ -43,6 +43,7 @@ body{
 }
 
 .nav ul li a{
+    display: block;
     padding:10px 20px;
     text-decoration:none;
     line-height:80px;
@@ -51,6 +52,7 @@ body{
 }
 
 .nav ul li a:hover{
+    background-color:greenyellow;
     color:palevioletred;
 }
 
