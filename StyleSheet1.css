@@ -4,69 +4,83 @@
     font-family:Arial,Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color:lightgrey;
-}
-
-.header {
-    min-width: 0px;
-    position: sticky;
-    margin: 0 auto;
-   
-}
-
-.container1 {
-    position: fixed;
-    background-color: darkred;
-    margin: 0 auto;
-    min-width: 400px;
-    width:100%;
-}
-
-.container {
-    margin: 0 auto;
-    
+.header{
+    background-color:darkred;
+    height:100px
 }
 
 .logo{
     float:left;
-    margin:10px 20px 10px 20px;
+    padding:20px 20px 10px 100px;
 }
 
-.nav {
-    float: left;
-    width:500px;
+.header h1 {
+    color: whitesmoke;
+    float: right;
+    padding: 10px 100px 10px 20px;
+}
+
+
+body{
+    background-color:lightgrey;
+}
+
+#header{
+    position:sticky;
+    margin:0 auto;
+    width:100%;
+    top:0;
+}
+
+.container1{
+   
+}
+
+.nav ul {
+    list-style-type: none;
+    background-color: #ad2626;
+    display: flex;
+    flex-direction: column;  
 }
 
     .nav ul li {
-        display: inline-block;
-        border: 2px solid #ad2626;
-        margin: 0px 0px 0px 0px;
-        background-color: #ad2626;
+        
     }
 
-.nav ul li a{
-    display:block;
-    padding:10px 20px;
-    text-decoration:none;
-    line-height:50px;
-    font-size:20px;
-    color:white;
-    margin:0px;
-}
-
-    .nav ul li a:hover {
-        color: palevioletred;
-        background-color: #a52424;
+    .nav ul li a {
+        color: white;
+        display: block;
+        padding: 20px 1rem 20px 20px;
+        text-decoration: none;
+        font-size: 20px;   
     }
+ 
+ .nav ul li a:hover {
+            color: black;
+            background-color: #a52424;
+ }
 
-nav ul li a:after{
-    color: deeppink;
-} 
-
-section{
-    padding:30px;
+@media only screen and (min-width:600px)
+{
+    .nav ul {
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    .nav ul li{
+        flex:1 0 auto;
+    }
 }
+
+
+.container {
+    margin: 0 auto;
+}
+
+
+
+        section {
+            padding: 30px;
+        }
 
 article {
     background-color: #f7f8f9;
