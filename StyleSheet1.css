@@ -13,16 +13,8 @@ body{
     min-width: 0px;
     position: sticky;
     margin: 0 auto;
-   /*display:flex;
-    flex-direction:row;*/
+   
 }
-/*
-.header::after{
-   content:" ";
-   clear:both;
-   display:block;
-   visibility: hidden; 
-}*/
 
 .container1 {
     position: fixed;
@@ -39,14 +31,10 @@ body{
 
 .logo{
     float:left;
-   /* margin-left:100px;
-    margin-right:550px;*/
 }
 
 .nav {
     float: right;
-   /* margin-left:261px;
-   margin-right:46px;*/
 }
 
 .nav ul li{
@@ -86,17 +74,6 @@ article {
     border-radius:30px;
 }
 
-p{
-    display:none;
-}
-
-.content:hover p{
-    display:block;
-}
-
-.events p {
-    display: block;
-}
 
 .imgin1 {
     border-top-left-radius: 30px;
@@ -112,6 +89,19 @@ p{
     margin-bottom: 130px;
     width: 528px;
     float: right;
+}
+
+p {
+    display: none;
+    padding-bottom: 20px;
+}
+
+.content:hover p{
+    display:block;
+}
+
+.events p {
+    display: block;
 }
 
 .article h1{
@@ -153,9 +143,9 @@ p{
     padding: 100px 10px 10px 5px;
     background-color: white;
 }
+
 .article p{
     margin-top:15px;
-
 }
 
 
@@ -194,11 +184,6 @@ h1,h2,h3,h4,h5{
     clear:both;
 }
 
-
-p{
-    padding-bottom:20px;
-    /*font-size:20px;*/
-}
 
 img{
     margin:0 auto;
