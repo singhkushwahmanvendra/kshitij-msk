@@ -86,6 +86,17 @@ article {
     border-radius:30px;
 }
 
+p{
+    display:none;
+}
+
+.content:hover p{
+    display:block;
+}
+
+.events p {
+    display: block;
+}
 
 .imgin1 {
     border-top-left-radius: 30px;
