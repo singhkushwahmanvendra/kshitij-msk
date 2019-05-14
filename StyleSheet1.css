@@ -9,7 +9,6 @@ body{
 }
 
 .header {
-    background-color: gray;
     min-width: 0px;
     position: sticky;
     margin: 0 auto;
@@ -18,12 +17,12 @@ body{
 
 .container1 {
     position: fixed;
-    background-color: gray;
+    background-color: darkred;
     margin: 0 auto;
     min-width: 400px;
-    
     width:100%;
 }
+
 .container {
     margin: 0 auto;
     
@@ -31,41 +30,50 @@ body{
 
 .logo{
     float:left;
+    margin:10px 20px 10px 20px;
 }
 
 .nav {
-    float: right;
+    float: left;
+    width:500px;
 }
 
-.nav ul li{
-    display:inline-block;
-    border-left: 1px solid white;
-}
+    .nav ul li {
+        display: inline-block;
+        border: 2px solid white;
+        margin: 0px 0px 0px 0px;
+        background-color: #ad2626;
+    }
 
 .nav ul li a{
-    display: block;
+    display:block;
     padding:10px 20px;
     text-decoration:none;
     line-height:80px;
     font-size:20px;
     color:white;
+    margin:0px;
 }
 
-.nav ul li a:hover{
-    background-color:greenyellow;
-    color:palevioletred;
-}
+    .nav ul li a:hover {
+        color: palevioletred;
+        background-color: #076d15;
+    }
+
+nav ul li a:after{
+    color: deeppink;
+} 
 
 section{
     padding:30px;
 }
 
 article {
-    background-color: white;
+    background-color: #f7f8f9;
     padding: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin:100px 20px 20px 20px;
+    margin: 100px 20px 20px 20px;
 }
 
 .article:hover {
@@ -130,11 +138,15 @@ p {
 #rbe{
     float:right;
     width:550px;
-    padding-bottom:150px;
+    height:500px;
+    overflow:auto;
+    
 }
 #cpe {
     float: left;
     width: 600px;
+    height: 500px;
+    overflow: auto;
 }
 
 .article h3 {
@@ -209,15 +221,11 @@ img{
 
 
 .footer {
-    background: #d4d8dd;
-    padding: 20px;
+    color:wheat;
+    background-color: darkred;
+    padding: 50px;
     text-align: center;
 }
-
-
-
-
-
 
 
 
