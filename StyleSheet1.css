@@ -40,7 +40,7 @@ body{
 
     .nav ul li {
         display: inline-block;
-        border: 2px solid white;
+        border: 2px solid #ad2626;
         margin: 0px 0px 0px 0px;
         background-color: #ad2626;
     }
@@ -49,7 +49,7 @@ body{
     display:block;
     padding:10px 20px;
     text-decoration:none;
-    line-height:80px;
+    line-height:50px;
     font-size:20px;
     color:white;
     margin:0px;
@@ -57,7 +57,7 @@ body{
 
     .nav ul li a:hover {
         color: palevioletred;
-        background-color: #076d15;
+        background-color: #a52424;
     }
 
 nav ul li a:after{
@@ -106,9 +106,20 @@ p {
     padding-bottom: 20px;
 }
 
-.content:hover p{
-    display:block;
+.content:hover p {
+    display: block;
+    background-color: #bc4545;
+    color:wheat;
 }
+
+.content:hover {
+    background-color: #bc4545;
+    color: wheat;
+}
+
+    .content:hover h2, .content:hover h3 {
+        color: red;
+    }
 
 .events p {
     display: block;
@@ -193,9 +204,10 @@ h1,h2,h3,h4,h5{
     padding-bottom:10px;
 }
 
-#events{
-    padding-top:100px;
-    clear:both;
+#events {
+    padding-top: 100px;
+    clear: both;
+    background-color: #f7f8f9;
 }
 
 
@@ -205,9 +217,13 @@ img{
     max-width:100%;
 }
 
-.spr{
-    padding:100px 20px 20px 20px;
-    margin:20px 20px 20px 20px;
+#sponsors {
+    background-color: #f7f8f9;
+}
+
+.spr {
+    padding: 100px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;   
 }
 
 .sponsor{
