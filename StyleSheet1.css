@@ -13,8 +13,8 @@ body{
     min-width: 0px;
     position: sticky;
     margin: 0 auto;
-    display:flex;
-    flex-direction:row;
+   /*display:flex;
+    flex-direction:row;*/
 }
 /*
 .header::after{
