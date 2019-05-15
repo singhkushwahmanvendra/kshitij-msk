@@ -165,7 +165,7 @@ p {
     display: block;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    padding: 100px 30px 30px 30px;
+    padding: 100px 30px 100px 30px;
     margin: 30px 10px 100px 10px;
     border-radius: 20px;
     /* background-color: #bc4545;*/
@@ -226,14 +226,14 @@ p {
 .events p {
     display: block;
 }
-.events:hover {
+/*.events:hover {
     background-color: rgba(2, 201, 232,0.9);
     animation: ex2;
     animation-duration: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
+}*/
 
 .article h1{
     color:red;
@@ -258,8 +258,9 @@ p {
 }
 
 #rbe {
-    float: right;
-    width: 42%;
+    border-radius: 20px;
+    padding: 100px 100px 100px 15px;
+    margin-bottom:20px;
     height: 500px;
     overflow: auto;
     background-color: rgba(2, 201, 232,0.5);
@@ -270,8 +271,9 @@ p {
     animation-timing-function: linear;
 }
 #cpe {
-    float: left;
-    width: 45%;
+    border-radius: 20px;
+    padding: 100px 15px 100px 100px;
+    margin-bottom: 20px;
     height: 500px;
     overflow: auto;
     background-color: rgba(2, 201, 232,0.5);
@@ -282,9 +284,9 @@ p {
     animation-timing-function: linear;
 }
 
-    #rbe:hover, #cpe:hover {
+   /* #rbe:hover, #cpe:hover {
         background-color: rgba(2, 201, 232,0.9);
-    }
+    }*/
 
 .article h3 {
     border-left: 10px solid blue;
@@ -319,7 +321,7 @@ h1,h2,h3,h4,h5{
 
 #events {
     padding-top: 100px;
-    clear: both;
+    margin-top:20px;
    /* background-color: #f7f8f9;*/
 }
 
@@ -385,4 +387,41 @@ img{
         background-color: rgba(206, 26, 26,0.6);
     }
 }
+
+@media only screen and (min-width:800px) {
+    .events {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+
+.events {
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#cpe li{
+    display:inline;
+    margin:10px;
+    padding:50px;
+    
+}
+#rbe li {
+    display: inline;
+    margin: 10px;
+    padding: 50px;
+}
+
+
+
+
+
 
