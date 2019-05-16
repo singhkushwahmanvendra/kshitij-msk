@@ -23,7 +23,7 @@
 
 
 #header{
-    margin:0 auto;
+   /* margin:0 auto;*/
     top:0;
     z-index:4;
 }
@@ -61,6 +61,10 @@
                 color: red;
                 background-color: black;
             }
+
+.clear {
+    clear: both;
+}
 
 @media only screen and (min-width:20cm) {
 
@@ -230,9 +234,7 @@
         margin-top: 20px;
     }
 
-    .clear {
-        clear: both;
-    }
+    
 
     #rbe {
         border-radius: 20px;
