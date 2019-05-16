@@ -1,12 +1,10 @@
 ﻿* {
     margin: 0;
     padding: 0;
-   /* box-sizing: border-box;*/
     font-family: Arial,Arial, Helvetica, sans-serif;
 }
 
 .header{
-   /* background-color:darkred;*/
     height:100px;
 }
 
@@ -26,27 +24,12 @@ body {
     background-image: url(images/back.jpg);
     background-size:cover;
     background-attachment: fixed;
-   /* background-color: lightgrey;*/
     animation-name:ex1;
-    animation-duration:10s;
+    animation-duration:24s;
     animation-iteration-count:infinite;
     animation-direction:alternate;
     animation-timing-function:linear;
 }
-
-@keyframes ex1 {
-    0% {
-        background-image: url(images/back.jpg);
-    }
-    50% {
-        background-image: url(images/wp.jpg);
-    }
-    100% {
-        background-image: url(images/bk1.jpg);
-    }
-
-}
-
 
 #header{
     position:sticky;
@@ -63,7 +46,6 @@ body {
 .nav ul {
     list-style-type: none;
     background-color: rgba(35, 115, 206,0.9);
-    /* background-color: #ad2626;*/
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +61,7 @@ body {
             text-decoration: none;
             font-size: 20px;
             animation: ex2;
-            animation-duration: 5s;
+            animation-duration: 24s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
@@ -87,12 +69,10 @@ body {
 
         .nav ul li a:hover {
             color: red;
-            background-color: rgba(72, 155, 249,0.8);
-            /* background-color: #a52424;*/
-          
+            background-color: rgba(255, 255, 255,1);
         }
 
-@media only screen and (min-width:800px)
+@media only screen and (min-width:20cm)
 {
     .nav ul {
         flex-direction:row;
@@ -108,16 +88,11 @@ body {
     margin: 0 auto;
 }
 
-
-
         section {
             padding: 30px;
         }
 
 article {
-    
-    
-   /* background-color: #f7f8f9;*/
     padding: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -162,26 +137,9 @@ article {
     animation-timing-function:linear;
 }
 
-@keyframes sl {
-    0%{
-        background-image: url(images/orig1.jpg);
-        background-size:cover;
-    }
-    50% {
-        background-image: url(images/down1.jpg);
-        background-size: cover;
-    }
-    100% {
-        background-image: url(images/image1.jpg);
-        background-size: cover;
-    }
-}
-
-
 p {
     position: relative;
     display: block;
-    /* background-color: #bc4545;*/
     color: wheat;
     padding-bottom: 20px;
     animation-name: ex;
@@ -204,7 +162,7 @@ p {
     animation-delay: -1s;
     z-index: 1;
     animation: ex2;
-    animation-duration: 5s;
+    animation-duration: 24s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -212,42 +170,26 @@ p {
 
     .content:hover {
         box-shadow: 0 8px 16px 0 rgba(242, 38, 7,0.2);
-        background-color: rgba(2, 201, 232,0.9);
-        animation: ex2;
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
+        background-color: black;
+     }
 
 
 
 @keyframes ex{
     from {
-        /* display:none;
-            background-color: white;*/
         left: -50%;
         color: black;
     }
     to {
         left: 0;
-        /* display:block;
-        background-color: #bc4545;*/
         color: wheat;
     }
 }
 
 .content:hover p {
     display: block;
-    /*background-color: #bc4545;*/
     color: white;
 }
-
-/*
-.content:hover {
-    background-color: #bc4545;
-    color: wheat;
-}*/
 
     .content:hover h2, .content:hover h3 {
         color: red;
@@ -256,14 +198,7 @@ p {
 .events p {
     display: block;
 }
-/*.events:hover {
-    background-color: rgba(2, 201, 232,0.9);
-    animation: ex2;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}*/
+
 
 .article h1{
     color:red;
@@ -276,7 +211,6 @@ p {
     margin-bottom:10px;
     padding:100px 10px 10px 5px;
     color:white;
-   /* background-color:white;*/
 }
 
 .boxes{
@@ -295,7 +229,7 @@ p {
     overflow: auto;
     background-color: rgba(2, 201, 232,0.5);
     animation: ex2;
-    animation-duration: 5s;
+    animation-duration: 24s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -308,15 +242,16 @@ p {
     overflow: auto;
     background-color: rgba(2, 201, 232,0.5);
     animation: ex2;
-    animation-duration: 5s;
+    animation-duration: 24s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-   /* #rbe:hover, #cpe:hover {
-        background-color: rgba(2, 201, 232,0.9);
-    }*/
+    #rbe:hover, #cpe:hover {
+        background-color: black;
+        color:white;
+    }
 
 .article h3 {
     border-left: 10px solid blue;
@@ -324,7 +259,6 @@ p {
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 100px 10px 10px 5px;
-    /*background-color: white;*/
     color: white;
 }
 
@@ -352,7 +286,6 @@ h1,h2,h3,h4,h5{
 #events {
     padding-top: 100px;
     margin-top:20px;
-   /* background-color: #f7f8f9;*/
 }
 
 
@@ -363,7 +296,6 @@ img{
 }
 
 #sponsors {
-    /* background-color: #f7f8f9;*/
     margin-left:20px;
 }
 
@@ -371,7 +303,7 @@ img{
     padding: 100px 20px 20px 20px;
     margin: 20px 20px 20px 20px;
     animation: ex2;
-    animation-duration: 5s;
+    animation-duration: 24s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -379,11 +311,6 @@ img{
 
     .spr:hover {
         border-radius: 30px;
-        animation: ex2;
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
     }
 
     .sponsor {
@@ -403,22 +330,63 @@ img{
     text-align: center;
     background-color: rgba(2, 201, 232,0.9);
     animation: ex2;
-    animation-duration: 5s;
+    animation-duration: 24s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes ex2{
-    from {
-        background-color: rgba(2, 201, 232,0.6);
+@keyframes sl {
+    0%{
+        background-image: url(images/orig1.jpg);
+        background-size:cover;
     }
-    to {
-        background-color: rgba(206, 26, 26,0.6);
+    50% {
+        background-image: url(images/down1.jpg);
+        background-size: cover;
+    }
+    100% {
+        background-image: url(images/image1.jpg);
+        background-size: cover;
     }
 }
 
-@media only screen and (min-width:800px) {
+@keyframes ex1 {
+    0% {
+        background-image: url(images/bk4.jpg);
+    }
+
+    33.33% {
+        background-image: url(images/back2.png);
+    }
+
+    66.66% {
+        background-image: url(images/wp.jpg);
+    }
+
+    100% {
+        background-image: url(images/bk1.jpg);
+    }
+}
+
+
+
+@keyframes ex2{
+    0% {
+        background-color: rgba(46, 92, 209,0.6);
+    }
+    33.33% {
+        background-color: rgba(54, 209, 43,0.95);
+    } 
+   66.66% {
+        background-color: rgba(206, 26, 26,0.6);
+    }
+    100% {
+        background-color: rgba(46, 92, 209,0.6);
+    }
+}
+
+@media only screen and (min-width:20cm) {
     .events {
         display: grid;
         grid-template-columns: 50% 50%;
