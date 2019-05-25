@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SNAKE GAME</title>
+    <link rel="stylesheet" type="text/css" href="snake.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">              <!--including icons from google icons.-->
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li>                       
+                        <div class="top">
+                            SNAKE GAME
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            SPEED
+                            <div class="dropdown-content" id="dropdown-content">
+                                <p><button onclick="speed(1)">speed=1</button></p>
+                                <p><button onclick="speed(2)">speed=2</button></p>
+                                <p><button onclick="speed(3)">speed=3</button></p>
+                                <p><button onclick="speed(4)">speed=4</button></p>
+                                <p><button onclick="speed(5)">speed=5</button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="top">
+                            SCORE
+                            <button id="score">score</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            MAZE
+                            <div class="dropdown-content" id="dropdown-content">
+                                <p>ON</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            auto
+                            <div class="dropdown-content" id="dropdown-content">
+                               <p><button onclick="automov()">ON</button></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <audio id="eat"><source src="audio/eat.mp3" type="audio/mp3" /></audio>
+        <audio id="dead"><source src="audio/dead.mp3" type="audio/mp3" /></audio>
+        <audio id="left"><source src="audio/left.mp3" type="audio/mp3" /></audio>
+        <audio id="up"><source src="audio/up.mp3" type="audio/mp3" /></audio>
+        <audio id="right"><source src="audio/right.mp3" type="audio/mp3" /></audio>
+        <audio id="down"><source src="audio/down.mp3" type="audio/mp3" /></audio>
+        
+            <div class="g1">
+                <canvas id="canvas" width="1000" height="600"></canvas>
+            </div>
+    </section>
+        <script src="snake.js"></script>
+
+</body>
+</html>
