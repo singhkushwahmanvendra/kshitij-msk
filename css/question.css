@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    text-decoration:none;
+}
+
+ul{
+    list-style-type:none;
+}
+
+body {
+    background-image: url(../images/q.jpg);
+
+    background-size:contain;
+    font-size: 15px;
+    /* line-height:1.6em;*/
+}
+
+header {
+    font-size: 36px;
+    color: red;
+    padding: 5px;
+    display: block;
+    background-color: rgba(255,255,255,.5);
+    border-bottom: 3px #f4f4f4 solid;
+}
+
+.container {
+     width:80%;
+     margin:0 auto;
+     overflow:auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255,255,255,.8);
+    margin-top:8%;
+}
+
+main{
+    padding-bottom:20px;
+}
+
+.flex {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+    .flex li {
+        flex: 1 0 auto;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(205, 210, 216,.9);
+        padding: 20px 20px 20px 20px;
+        border-radius: 20px;
+        margin: 10px 20px 20px 20px;
+    }
+
+.choices li:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(31, 211, 67);
+}
+
+.button, a {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px 20px 10px 8px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    #nav li {
+        padding:20px;
+        flex: 1 0 auto;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(255,0,0,.7);
+        border: 2px solid darkred;
+    }
+
+.dropdown{
+    position: relative;
+    cursor:pointer;
+}
+
+
+.dropdown-content {
+    width: 85%;
+    padding: 16px 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 160px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    margin:50px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(205, 210, 216,.9);
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    margin: 10px 20px 20px 20px;
+}
+form {
+  
+    margin: 10px;
+    padding: 10px;
+}
+
+.echo{
+    background-color:darkred;
+    color:white;
+    padding:20px;
+    border:3px red solid;
+}
+
+.alert {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    border: 3px green solid;
+}

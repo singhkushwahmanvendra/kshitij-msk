@@ -1,0 +1,16 @@
+body {
+    background-color: blue;
+}
+
+.form {
+    background-color: wheat;
+    text-align: center;
+    margin: 20% 40%;
+    display: inline-block;
+}
+
+.name,
+.email {
+    color: red;
+    margin: 20px;
+}
